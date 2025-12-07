@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menambahkan Elemen Baru</title>
+</head>
+<body>
+
+<div id="wadah"></div>
+<button onclick="tambahElemen()">Tambah Elemen</button>
+
+<script>
+function tambahElemen() {
+  let elemenBaru = document.createElement("p"); 
+  elemenBaru.innerHTML = "Ini elemen paragraf baru.";
+  document.getElementById("wadah").appendChild(elemenBaru);
+}
+  /*
+  1. Fungsi document.getElementById()
+
+Untuk mengambil elemen HTML berdasarkan id-nya, supaya bisa dibaca atau diubah lewat JavaScript.
+Contoh:
+
+document.getElementById("judul");
+
+
+⸻
+
+2. Cara menambah elemen baru ke halaman
+
+Gunakan JavaScript:
+	1.	Buat elemen baru
+
+let p = document.createElement("p");
+
+
+	2.	Isi kontennya
+
+p.textContent = "Halo!";
+
+
+	3.	Tambahkan ke halaman
+
+document.body.appendChild(p);
+
+
+
+⸻
+  */
+</script>
+
+</body>
+</html>

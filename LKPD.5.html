@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latihan Array</title>
+</head>
+<body>
+
+<script>
+// Latihan 1
+let teman = ["jaemin", "keonho", "hanni", "minji", "mingyu"];
+document.write("<b>Daftar Nama Teman:</b><br>");
+for (let i = 0; i < teman.length; i++) {
+  document.write(teman[i] + "<br>");
+}
+
+document.write("<br>");
+
+// Latihan 2
+let nilai = [80, 90, 75, 85, 95];
+
+let total = 0;
+for (let i = 0; i < nilai.length; i++) {
+  total += nilai[i];
+}
+
+let rataRata = total / nilai.length;
+
+document.write("<b>Rata-rata nilai siswa:</b> " + rataRata);
+  /*
+  1. Keuntungan menggunakan array
+	•	Data jadi lebih rapi dalam satu wadah.
+	•	Lebih mudah dikelola (dicari, ditambah, dihapus).
+	•	Menghemat penulisan kode.
+	•	Bisa diakses dengan indeks (urutan).
+
+⸻
+
+2. Cara menambahkan elemen baru ke array
+	•	array.push(item) → menambah di akhir.
+	•	array.unshift(item) → menambah di awal.
+	•	array[index] = item → menambah di posisi tertentu.
+  */
+</script>
+
+</body>
+</html>

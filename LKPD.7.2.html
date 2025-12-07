@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Input</title>
+</head>
+<body>
+
+<input type="text" id="ketik" oninput="tampilkan()"
+       placeholder="Ketik sesuatu...">
+<p>Hasil: <span id="hasil"></span></p>
+
+<script>
+function tampilkan() {
+  let teks = document.getElementById("ketik").value;
+  document.getElementById("hasil").innerHTML = teks;
+}
+  /*
+  1. Perbedaan onclick dan onmouseover
+	•	onclick → event yang terjadi saat elemen diklik.
+	•	onmouseover → event yang terjadi saat kursor hanya diarahkan/menyentuh elemen, tanpa klik.
+
+⸻
+
+2. Mengapa event penting untuk interaktivitas?
+
+Karena event membuat halaman bisa merespon tindakan pengguna (klik, hover, ketik, scroll), sehingga website menjadi hidup, interaktif, dan tidak pasif.
+  */
+</script>
+
+</body>
+</html>
